@@ -23,8 +23,11 @@ RUN echo -e "http://mirrors.aliyun.com/alpine/v3.16/main\nhttp://mirrors.aliyun.
     ln -s /usr/glibc-compat/bin/locale /usr/local/bin/locale && \
     rm /etc/apk/keys/sgerrand.rsa.pub && \
     rm -rf glibc-${GLIBC_VERSION}.apk glibc-bin-${GLIBC_VERSION}.apk glibc-i18n-${GLIBC_VERSION}.apk && \
-    mkdir /apps/lxfpsc
+    mkdir /apps/lxfpsc -p
 
 # Configuration
 COPY lxfpsc /apps/lxfpsc/
-RUN chmod +x /apps/lxfpsc/lxfpsc
+COPY docker-entrypoint.sh /usr/bin/
+RUN chmod +x /apps/lxfpsc/lxfpsc /usr/bin/docker-entrypoint.sh
+
+ENTRYPOINT [ "docker-entrypoint.sh" ]
