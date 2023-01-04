@@ -26,7 +26,7 @@ RUN echo -e "http://mirrors.aliyun.com/alpine/v3.16/main\nhttp://mirrors.aliyun.
     mkdir /apps/lxfpsc -p
 
 # Configuration
-COPY lxfpsc /apps/lxfpsc/
+COPY ./lxfpsc /apps/lxfpsc/
 COPY docker-entrypoint.sh /usr/bin/
 RUN chmod +x /apps/lxfpsc/lxfpsc /usr/bin/docker-entrypoint.sh
 
