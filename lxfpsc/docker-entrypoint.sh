@@ -5,7 +5,6 @@ set -o nounset
 set -o pipefail
 
 KPFW_URL_FILE=/apps/lxfpsc/url.cnf
-
 KPFW_URL="${KPFW_URL:-127.0.0.1}"
 KPFW_PORT="${KPFW_PORT:-8082}"
 
