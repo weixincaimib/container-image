@@ -4,6 +4,7 @@ FROM alpine:3.16.2
 ENV GLIBC_VERSION 2.34-r0
 
 # Glibc Download Url
+#ARG GLIBC_RUL=https://hallo.aluopy.cn/pkgs/alpine-pkg-glibc
 ARG GLIBC_RUL=https://github.com/sgerrand/alpine-pkg-glibc/releases/download
 
 # Install 
