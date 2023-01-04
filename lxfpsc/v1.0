@@ -8,4 +8,4 @@ RUN chmod +x lxfpsc /usr/bin/docker-entrypoint.sh
 
 ENTRYPOINT [ "docker-entrypoint.sh" ]
 
-CMD /apps/lxfpsc/lxfpsc
+CMD /app/lxfpsc/lxfpsc
