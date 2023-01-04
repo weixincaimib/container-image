@@ -14,3 +14,7 @@ registry.cn-shenzhen.aliyuncs.com/aluopyy/kube-state-metrics:v2.7.0
 registry.k8s.io/prometheus-adapter/prometheus-adapter:v0.10.0
 registry.cn-shenzhen.aliyuncs.com/aluopyy/prometheus-adapter:v0.10.0
 ```
+## tomcat
+```
+registry.cn-shenzhen.aliyuncs.com/aluopyy/tomcat:9.0.68-jdk8-alpine
+```
