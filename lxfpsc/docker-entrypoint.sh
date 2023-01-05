@@ -10,6 +10,4 @@ KPFW_PORT="${KPFW_PORT:-8082}"
 
 echo "${KPFW_IP}:${KPFW_PORT}" > ${KPFW_URL_FILE}
 
-/app/lxfpsc/lxfpsc init
-
 exec "$@"
